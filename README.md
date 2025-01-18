@@ -43,12 +43,16 @@ Welcome to **E-Booklin** – your ultimate solution for hassle-free appointment 
 ## 📸 Screenshots
 
 ### 1. Home Page
+![Home page] (https://github.com/user-attachments/assets/728d5ef0-d81c-4d2e-b777-7917081919b6)
+
 A clean, welcoming interface with all essential features highlighted.
 
-### 2. Booking Page
-Seamless and intuitive booking system with live availability updates.
+### 2. Dashbord Page
+![Dashbord Page](https://github.com/user-attachments/assets/ee7c1255-a3e9-4fb8-82fa-9b8249bb9d79)
+ 
+An Interactive Dashboard to be decoded by the user Easly.
 
-*(Add your project screenshots here to make it visually appealing!)*
+
 
 ---
 
