@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Booklin - Features</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- AOS (Animate on Scroll) Library for animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    E-Booklin
+    <div class="header-options">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #0213fd;
+    }
+    
+    /* Header Styling */
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 10px 10px;
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    
+    .header-options {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      justify-content: flex-end;
+    }
+    
+    .header-options a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px;
+    }
+    
+    .header-options a:hover {
+      color: #ff7f00;
+    }
+    
+    /* Features Section Styling */
+    .features-section {
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .features-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    .features-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .feature {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      opacity: 0; /* Initially hidden for animation */
+    }
+    
+    .feature-icon {
+      font-size: 40px;
+      color: #ff7f00;
+      margin-bottom: 15px;
+    }
+    
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .feature p {
+      font-size: 1rem;
+      color: #666;
+    }
+    
+    /* Footer Styling */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    
+    /* Media Query for Desktop */
+    @media screen and (min-width: 768px) {
+      .features-container {
+        grid-template-columns: repeat(4, 1fr); /* Exactly 4 features in a row */
+      }
+    }
+    </style>
+    
+
+  <!-- Main Content Section -->
+  <div class="features-section">
+    <h2>E-Booklin Features</h2>
+
+    <div class="features-container">
+      <div class="feature" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-calendar-check feature-icon"></i>
+        <h3>Easy Appointment Booking</h3>
+        <p>Book appointments with ease from the comfort of your home. No more long queues at stores, salons, or doctor's offices.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-clock feature-icon"></i>
+        <h3>Real-Time Availability</h3>
+        <p>Check real-time availability of service providers and choose the best time slot for your appointment.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-cogs feature-icon"></i>
+        <h3>Wide Range of Services</h3>
+        <p>E-Booklin provides access to a variety of services, ranging from salons to doctor’s appointments, and more!</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-bell feature-icon"></i>
+        <h3>Instant Notifications</h3>
+        <p>Get instant updates and reminders about your appointments, ensuring you never miss an important meeting.</p>
+      </div>
+      <!-- New Features Added -->
+      <div class="feature" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-users feature-icon"></i>
+        <h3>User-Friendly Interface</h3>
+        <p>E-Booklin offers an intuitive and easy-to-use interface, making booking appointments a hassle-free experience.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="600">
+        <i class="fas fa-sliders-h feature-icon"></i>
+        <h3>Customizable Features</h3>
+        <p>Tailor your preferences and personalize the app to suit your needs, ensuring a customized experience.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="700">
+        <i class="fas fa-headset feature-icon"></i>
+        <h3>24/7 Customer Support</h3>
+        <p>Our dedicated support team is available round-the-clock to assist you with any queries or concerns.</p>
+      </div>
+      <div class="feature" data-aos="fade-up" data-aos-delay="800">
+        <i class="fas fa-credit-card feature-icon"></i>
+        <h3>Secure Payment Options</h3>
+        <p>Enjoy safe and secure payment options for all your appointments, ensuring your privacy and security.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 E-Booklin. All Rights Reserved.</p>
+  </footer>
+
+  <!-- AOS (Animate on Scroll) Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();  // Initialize AOS library for animations
+  </script>
+</body>
+</html>

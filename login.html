@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Booklin - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 10px;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .hero-section {
+            text-align: center;
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .hero-section h2 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto 100px auto; /* Extra bottom margin for footer */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Spacing between form elements */
+            padding: 30px 25px; /* Increase padding for larger form size */
+            background-color: white;
+            border-radius: 10px; /* Slightly more rounded corners */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Enhance shadow for a prominent look */
+            max-width: 600px; /* Increased max-width for larger form */
+            margin: 0 auto; /* Center align the form */
+        }
+        
+        .form-container input, 
+        .form-container select {
+            width: calc(100% - 30px); /* Adjust input box width to fit new padding */
+            padding: 15px; /* Increase padding for larger input fields */
+            margin: 10px auto; /* Add more spacing around inputs */
+            border: 1px solid #ccc;
+            border-radius: 6px; /* Slightly larger rounded edges */
+            font-size: 16px; /* Increase font size for better readability */
+            background-color: #f9f9f9;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for input fields */
+            transition: all 0.3s ease;
+        }
+        
+        .form-container input:focus, 
+        .form-container select:focus {
+            border-color: #4CAF50;
+            background-color: white;
+            box-shadow: 0 0 7px rgba(76, 175, 80, 0.4);
+            outline: none;
+        }
+        
+        .form-container button {
+            width: 100%; /* Full width button */
+            padding: 15px; /* Larger button padding */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px; /* Larger font size for buttons */
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+        
+        .description {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .create-account-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .create-account-link a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .create-account-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .form-container label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .back-to-home {
+            text-align: center;
+            margin-top: 15px; /* Increase spacing below the form */
+        }
+        
+        .back-to-home a {
+            text-decoration: none;
+            font-size: 15px; /* Slightly larger text for link */
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+        
+            
+/* Options Styling */
+.header-options {
+  display: flex;
+  flex-direction: row; /* Row-wise layout */
+  gap: 20px; /* Space between options */
+  display: flex;
+  justify-content: flex-end; /* Align options to the right */
+}
+
+.header-options a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+
+.header-options a:hover {
+  color: #ff7f00; /* Hover color */
+}
+         
+         
+         </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        E-Booklin
+        
+
+    <div class="header-options">
+      <a href="/about.html">About</a>
+      <a href="/features.html">Features</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h2>Welcome to E-Booklin - Your One-Stop Solution for Customers & Professionals</h2>
+    </div>
+     
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Login Form -->
+        <form id="login-form" class="form-container" action="/login" method="POST">
+            <h1>E-Booklin - Login</h1>
+
+            <div class="create-account-link">
+                <p>New on E-Booklin? <a href="javascript:void(0)" onclick="toggleForms()">Create Account</a></p>
+            </div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="user_type">Login as:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="customer">Customer</option>
+                <option value="professional">Professional</option>
+            </select>
+
+            <button type="submit">Login</button>
+
+            <div class="back-to-home">
+                <a href="/index.html">Back to Home Page</a>
+            </div>
+
+
+        </form>
+
+        <!-- Create Account Form -->
+        <form id="create-account-form" class="form-container" action="/create-account" method="POST" style="display: none;">
+            <h2>Create Account</h2>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create Password" required>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+
+            <button type="submit">Create Account</button>
+
+            <div class="back-to-home">
+                <a href="javascript:void(0)" onclick="toggleForms()">Back to Login</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 E-Booklin. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Function to toggle between login and create account forms
+        function toggleForms() {
+            const loginForm = document.getElementById('login-form');
+            const createAccountForm = document.getElementById('create-account-form');
+
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                createAccountForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                createAccountForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

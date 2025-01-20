@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Deal</title>
+
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #004aad;
+        }
+
+        .business-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .business-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .business-item:hover {
+            transform: scale(1.05);
+        }
+
+        .business-item button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .business-item button:hover {
+            background-color: #003080;
+        }
+
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            width: 150px;
+        }
+
+        .back-button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Types</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .business-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Desktop size ke liye 5 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1024px) {
+    .business-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tablet aur smaller devices ke liye dynamic layout */
+    }
+}
+
+        .business-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .business-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .business-item h3 {
+            margin: 10px 0;
+            color: #555;
+        }
+        .business-item i {
+            font-size: 50px;
+            color: #ff7f50;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ff7f50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #e66b40;
+        }
+        .back-button {
+            position: absolute;
+            left: 10px;
+            margin-top: 20px;
+            background-color: #f3ef0e;
+            
+            
+        }
+        /* Fix the button to the top-right corner */
+.business-deal-btn {
+    position: absolute;
+    right: 10px; /* Adjust the distance from the right */
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.business-deal-btn:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.business-deal-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 204, 0, 0.8);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pick a Business Type to Get Started for Free</h1>
+        <div class="business-list">
+            <div class="business-item">
+                <i class="fas fa-cut"></i>
+                <h3>Hair Salon</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-hand-sparkles"></i>
+                <h3>Nail Salon</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-spa"></i>
+                <h3>Waxing Salon</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Beauty Salon</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-user-alt"></i>
+                <h3>Barbershop</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-eye"></i>
+                <h3>Eyebrows & Lashes</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Massage</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-leaf"></i>
+                <h3>Spa</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Gym & Fitness</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-user-friends"></i>
+                <h3>Personal Trainer</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-handshake"></i>
+                <h3>Therapy Centre</h3>
+                <button>Get Started</button>
+            </div>
+
+            <div class="business-item">
+                <i class="fas fa-sun"></i>
+                <h3>Tanning Studio</h3>
+                <button>Get Started</button>
+            </div>
+            <div class="business-item">
+                <i class="fas fa-flask"></i>
+                <h3>Aesthetics</h3>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="business-deal-container">
+            <a href="business.html" class="business-deal-btn">For Business</a>
+            </div>
+        <button class="back-button" onclick="redirectToPreviousPage();">Back</button>
+
+        <script>
+            function redirectToPreviousPage() {
+                const fallbackURL = 'index.html'; // Change this to your desired fallback page.
+                if (document.referrer) {
+                    window.location.href = document.referrer; // Redirects to the referring page.
+                } else {
+                    window.location.href = fallbackURL; // Redirects to fallback if no referrer.
+                }
+            }
+        </script>
+        
+    </div>
+</body>
+
+</body>
+
+</html>
